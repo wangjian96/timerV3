@@ -4,14 +4,9 @@
 //Assignment10
 var express = require('express'),
     config = require('./server/configure'),
-<<<<<<< HEAD
     app = express(),
     mongoose = require('mongoose');
 app.set('port', process.env.PORT || 3630);
-=======
-    app = express();
-app.set('port', process.env.PORT || 3610);
->>>>>>> d3c1fd6ed4662465f8e64c707d78e91786c28a13
 app.set('views', __dirname + '/views');
 app = config(app);
 mongoose.connect('mongodb://localhost/info', function(err,db){
